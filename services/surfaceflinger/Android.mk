@@ -134,6 +134,9 @@ ifeq ($(TARGET_HAVE_UI_BLUR),true)
     LOCAL_CFLAGS += -DUI_BLUR
 endif
 
+LOCAL_C_INCLUDES += $(TARGET_OUT_HEADERS)/ui
+LOCAL_CFLAGS += -DUI_BLUR
+
 LOCAL_MODULE := libsurfaceflinger
 
 LOCAL_CFLAGS += -Wall -Werror -Wunused -Wunreachable-code
